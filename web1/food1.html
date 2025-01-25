@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ข้อมูลเกี่ยวกับอาหารและแคลอรี่แบ่งตามหมวดหมู่สุขภาพ">
+    <title>ข้อมูลแคลอรี่ของอาหาร</title>
+    <link rel="icon" href="/pi/Screenshot 2025-01-24 234716.png">
+    <style>
+         #f11{
+            font-size: 30px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #48c9b0;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #48c9b0;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .food-category {
+            margin-bottom: 2rem;
+        }
+        .food-item {
+            margin-bottom: 1rem;
+        }
+        img{
+            width: 250px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ข้อมูลแคลอรี่ของอาหาร</h1>
+        <p id="f11">ข้อมูลโภชนาการของอาหาร </p>
+    </header>
+
+    <nav>
+        <a href="/public/index.html">หน้าเว็บหลัก</a>
+        <a href="#unhealthy">Unhealthy</a>
+        <a href="#healthy">Healthy</a>
+    </nav>
+
+    <div class="container">
+        <section id="unhealthy" class="food-category">
+            <h2>หมวด 1: อาหารที่ไม่ดีต่อสุขภาพ (Unhealthy)</h2>
+            <div class="food-item">
+                <h3>พิซซ่า (1 ชิ้น)</h3>
+                <p>พลังงาน: ~285 kcal<br>โปรตีน: 12 g<br>ไขมัน: 10 g<br>คาร์บ: 36 g</p>
+            </div>
+            <div class="food-item">
+                <h3>เบอร์เกอร์ (1 ชิ้น)</h3>
+                <p>พลังงาน: ~354 kcal<br>โปรตีน: 20 g<br>ไขมัน: 17 g<br>คาร์บ: 30 g</p>
+            </div>
+            <div class="food-item">
+                <h3>ชานมไข่มุก (1 แก้ว 500 มล.)</h3>
+                <p>พลังงาน: ~300 kcal<br>โปรตีน: 2 g<br>ไขมัน: 7 g<br>คาร์บ: 55 g</p>
+            </div>
+            <div class="food-item">
+                <h3>ไก่ทอด (2 ชิ้น)</h3>
+                <p>พลังงาน: ~400 kcal<br>โปรตีน: 28 g<br>ไขมัน: 24 g<br>คาร์บ: 10 g</p>
+            </div>
+            <div class="food-item">
+                <h3>เฟรนช์ฟรายส์ (100 กรัม)</h3>
+                <p>พลังงาน: ~312 kcal<br>โปรตีน: 3.5 g<br>ไขมัน: 15 g<br>คาร์บ: 41 g</p>
+            </div>
+            <h3>รวมหมวด 1 (โดยเฉลี่ย)</h3>
+            <p>พลังงาน: ~1651 kcal<br>โปรตีน: ~65.5 g<br>ไขมัน: ~73 g<br>คาร์บ: ~172 g</p>
+
+            <img src="/public/pi/ไขมัน.jpg">
+        </section>
+
+        <section id="healthy" class="food-category">
+            <h2>หมวด 2: อาหารที่ดีต่อสุขภาพ (Healthy)</h2>
+            <div class="food-item">
+                <h3>สลัด (ผักรวม + น้ำสลัด)</h3>
+                <p>พลังงาน: ~150 kcal<br>โปรตีน: 3 g<br>ไขมัน: 7 g<br>คาร์บ: 18 g</p>
+            </div>
+            <div class="food-item">
+                <h3>แซลมอน (100 กรัม ย่าง)</h3>
+                <p>พลังงาน: ~208 kcal<br>โปรตีน: 22 g<br>ไขมัน: 13 g<br>คาร์บ: 0 g</p>
+            </div>
+            <div class="food-item">
+                <h3>กรีกโยเกิร์ต + ผลไม้รวม (1 ถ้วย)</h3>
+                <p>พลังงาน: ~150 kcal<br>โปรตีน: 8 g<br>ไขมัน: 5 g<br>คาร์บ: 18 g</p>
+            </div>
+            <div class="food-item">
+                <h3>ข้าวต้มปลา (1 ถ้วย)</h3>
+                <p>พลังงาน: ~150 kcal<br>โปรตีน: 10 g<br>ไขมัน: 2 g<br>คาร์บ: 25 g</p>
+            </div>
+            <div class="food-item">
+                <h3>นมข้าวโอ๊ต (200 มล.)</h3>
+                <p>พลังงาน: ~90 kcal<br>โปรตีน: 2 g<br>ไขมัน: 2 g<br>คาร์บ: 16 g</p>
+            </div>
+            <h3>รวมหมวด 2 (โดยเฉลี่ย)</h3>
+            <p>พลังงาน: ~748 kcal<br>โปรตีน: ~45 g<br>ไขมัน: ~29 g<br>คาร์บ: ~77 g</p>
+
+            <img src="/public/pi/healthy-food-7.jpg">
+        </section>
+    </div>
+
+    <footer>
+        <p>😎  พัฒนาโดย กลุ่ม HealthSphere 😎</p>
+    </footer>
+</body>
+</html>
